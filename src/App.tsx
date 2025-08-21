@@ -1,12 +1,11 @@
 
 import { useForm } from "react-hook-form";
+import CopyRights from "./components/CopyRights";
+import { Inputs } from "./types/Inputs";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
-  type Inputs={
-    fullname : string;
-    email : string;
-    username : string;
-  }
+
   const { register, handleSubmit,clearErrors, watch, formState: { errors } } = useForm<Inputs>({
 	defaultValues :{
 		fullname: "",
@@ -33,28 +32,10 @@ const App = () => {
 		<h2>Contact Form</h2>
 		<div className="avtar"><img src="assets/images/color.jpg" /></div>			
 		<div className="form-info">
-			<form onSubmit={handleSubmit(onSubmit)}>
-				<input /*defaultValue="Your full name" */ 
-					{...register("fullname", {required : "fullname is required",minLength: { value: 10, message: "Value must be at least 10" }, maxLength: { value: 30, message: "Value must not exceed 30",
-					
-					 } })} onChange={()=>{clearErrors("fullname")}}
-				type="text" className="text" placeholder="Your full name" 
-          		/>
-		  		{errors?.fullname && <p style={{color : "red",marginTop:0}}>{errors?.fullname?.message}</p>}
-				<input {...register("email", {required : "email is required",minLength: { value: 10, message: "Value must be at least 10" }, maxLength: { value: 30, message: "Value must not exceed 30"}})} 
-					type="text" className="text" placeholder="Email adress" onChange={()=>{clearErrors("email")}}
-				/>
-		  		{errors?.email && <p style={{color : "red",marginTop:0}}>{errors?.email?.message}</p>}
-
-				<input {...register("username", {required : "username is required",minLength: { value: 10, message: "Value must be at least 8" }, maxLength: { value: 30, message: "Value must not exceed 30"}})} 
-					type="text" className="text" placeholder="User name" onChange={()=>{clearErrors("username")}}
-				/>
-		  		{errors?.username && <p style={{color : "red",marginTop:0}}>{errors?.username?.message}</p>}
-
-				<textarea  defaultValue="Message..." onFocus={()=>{}} onBlur={()=>{}}
-          required={false} />
-					<input type="submit" />
-				</form>
+			<ContactForm 
+				register={register} handleSubmit={handleSubmit} clearErrors={clearErrors}
+				errors={errors} onSubmit={onSubmit}
+			/>	
 			</div>			
 			<ul className="bottom-sc-icons">
 				<li><a href="#" className="facebook"><img src="assets/images/fb.png" />Facebook</a></li>
@@ -66,9 +47,7 @@ const App = () => {
 			</ul>
 			<div className="clear"> </div>
 	</div>
-<div className="copy-rights">
-	<p>Design by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
-</div>
+	<CopyRights />
 
       
     </>
