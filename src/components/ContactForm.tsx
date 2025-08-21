@@ -19,7 +19,7 @@ const ContactForm : React.FC <ContactFormProps> = ({
                 {...register("fullname", 
                     {required : "fullname is required",
                     pattern: {
-                        value: /^[a-zA-Z]{3,40}(?:\s[A-Z])?\s[a-zA-Z]{3,40}$/,
+                        value: /^[a-zA-Z]{3,40}(?:\s[A-Z])?\s[a-zA-Z]{8,35}$/,
                         message: 'Invalid Full name',
                     },
                     minLength: { 
