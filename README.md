@@ -26,7 +26,6 @@ Design and template by [W3Layouts](https://w3layouts.com/)
 Application is deployed in Github (Github Pages)
 
  [https://jadogeri.github.io/Glossy_Textured_Contact_Form/](https://jadogeri.github.io/Glossy_Textured_Contact_Form/)
- -->
 
 ## Repository
 
