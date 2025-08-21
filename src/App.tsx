@@ -7,29 +7,53 @@ const App = () => {
     email : string;
     username : string;
   }
-  const { register, handleSubmit } = useForm<Inputs>();
+  const { register, handleSubmit,clearErrors, watch, formState: { errors } } = useForm<Inputs>({
+	defaultValues :{
+		fullname: "",
+		email: "",
+		username: ""
+	}
+  });
 
-  const onSubmit = (data : any) =>{
-    console.log(data)
+  const onSubmit = () =>{
+	
+	if(!errors){
+		alert("found errors")		
+	}else{
+		alert("no errors")
+	}
+    console.log("data")
   }
 
   return (
     <>
+	{/* //onblur="if (this.value == '') {this.value = 'Your full name';}"  */}
       <h1>Glossy Textured Contact Form</h1>
 	<div className="registration">
 		<h2>Contact Form</h2>
 		<div className="avtar"><img src="assets/images/color.jpg" /></div>			
 		<div className="form-info">
-				<form onSubmit={handleSubmit(onSubmit)}>
-					<input type="text" className="text" value="Your full name" onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'Your full name';}" 
-          />
-					<input type="text" className="text" value="Email adress" onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'Email adress';}" 
-          />
-					<input type="text" className="text" value="User name" onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'User name';}" 
-          />
-					<textarea  onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'Message...';}" 
-          required={false}>Message...</textarea>
-					<input type="submit" value="SUBMIT"/>
+			<form onSubmit={handleSubmit(onSubmit)}>
+				<input /*defaultValue="Your full name" */ 
+					{...register("fullname", {required : "fullname is required",minLength: { value: 10, message: "Value must be at least 10" }, maxLength: { value: 30, message: "Value must not exceed 30",
+					
+					 } })} onChange={()=>{clearErrors("fullname")}}
+				type="text" className="text" placeholder="Your full name" 
+          		/>
+		  		{errors?.fullname && <p style={{color : "red",marginTop:0}}>{errors?.fullname?.message}</p>}
+				<input {...register("email", {required : "email is required",minLength: { value: 10, message: "Value must be at least 10" }, maxLength: { value: 30, message: "Value must not exceed 30"}})} 
+					type="text" className="text" placeholder="Email adress" onChange={()=>{clearErrors("email")}}
+				/>
+		  		{errors?.email && <p style={{color : "red",marginTop:0}}>{errors?.email?.message}</p>}
+
+				<input {...register("username", {required : "username is required",minLength: { value: 10, message: "Value must be at least 8" }, maxLength: { value: 30, message: "Value must not exceed 30"}})} 
+					type="text" className="text" placeholder="User name" onChange={()=>{clearErrors("username")}}
+				/>
+		  		{errors?.username && <p style={{color : "red",marginTop:0}}>{errors?.username?.message}</p>}
+
+				<textarea  defaultValue="Message..." onFocus={()=>{}} onBlur={()=>{}}
+          required={false} />
+					<input type="submit" />
 				</form>
 			</div>			
 			<ul className="bottom-sc-icons">
@@ -45,6 +69,7 @@ const App = () => {
 <div className="copy-rights">
 	<p>Design by <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
 </div>
+
       
     </>
 
