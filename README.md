@@ -1,46 +1,116 @@
-# Getting Started with Create React App
+## **Glossy Textured Contact Form**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Version:** 1.1
+**Date:** August 21, 2025
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This is a frontend Application temnplate (typescript) utilizing library react hook form for validating inputs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Authors
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[@jadogeri](https://www.github.com/jadogeri)
 
-### `npm test`
+## Acknowledgements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Design and template by [W3Layouts](https://w3layouts.com/)
 
-### `npm run build`
+## Project Template
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Glossy Textured Contact Form Responsive Widget Template](https://w3layouts.com/glossy-textured-contact-form-responsive-widget-template/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Application is deployed in Github (Github Pages)
 
-### `npm run eject`
+ [https://jadogeri.github.io/Glossy_Textured_Contact_Form/](https://jadogeri.github.io/Glossy_Textured_Contact_Form/)
+ -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Repository
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[source code ](https://github.com/jadogeri/Glossy_Textured_Contact_Form)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Screenshots
+-------------------------------------------------------------------------------------------------
+| ![Screenshot 1](assets/images/screenshot1.png) | ![Screenshot 1](assets/images/screenshot2.png) |
+| -------------------------------------------- | -------------------------------------------- |
+| ![Screenshot 1](assets/images/screenshot3.png) | ![Screenshot 1](assets/images/screenshot4.png) |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Table of Contents
 
-## Learn More
+<ul>
+    <li><a href="#1-introduction">1. Introduction</a>
+        <ul>
+            <li><a href="#11-purpose">1.1 Purpose</a> </li>
+        </ul>
+    </li>
+    <li><a href="#5-installation">2. Installation</a> </li>
+    <li><a href="#6-usage">3. Usage</a>
+        <ul>
+            <li><a href="#61-run-application">3.1 Run Application</a> </li>
+            <ul>
+              <li><a href="#611-run-locally">3.1.1 Run Locally</a> </li>
+            </ul>
+        </ul>
+    </li>
+    <li><a href="#10-references">4. References</a> </li>
+</ul>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **1. Introduction**
+
+### **1.1 Purpose**
+
+This document outlines the components, and design considerations for utilizing react hook form for form input validation.
+
+## **2. Installation**
+
+* [Download and install NodeJS](https://nodejs.org/en/download)
+
+---
+
+## **3. Usage**
+
+**Prerequisites** :installation of NodeJS.
+
+### **3.1 Run Application**
+
+1 Open command prompt or terminal.
+
+2 Type command git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git then press enter.
+
+```bash
+  git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git
+```
+
+3 Enter command cd Glossy_Textured_Contact_Form then press enter.
+
+```bash
+  cd Glossy_Textured_Contact_Form
+```
+
+#### **3.1.1 Run Locally**
+
+1 Type npm install --force to install dependencies.
+
+```bash
+  npm install --force
+```
+
+2 Type npm start to run application
+
+```bash
+  npm start
+```
+---
+
+## **4. References**
+
+* FreeCodeCamp : [Frontend Web Development: (HTML, CSS, JavaScript, TypeScript, React)](https://www.youtube.com/watch?v=MsnQ5uepIa).
+* AweSome Open Source : [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+* Readme.so : [The easiest way to create a README](https://readme.so/)
+* HUXN Webdev : [Master ReactJS in 7 Hours with 10 Real-World Projects 2023](https://www.youtube.com/watch?v=XrwsMN2IWnE/)
+* Dave Gray : [React JS Full Course for Beginners | Complete All-in-One Tutorial | 9 Hours](https://www.youtube.com/watch?v=RVFAyFWO4go/)
+* Dipesh Malvia : [Learn React JS with Project in 2 Hours | React Tutorial for Beginners | React Project Crash Course](https://www.youtube.com/watch?v=0riHps91AzE/)
