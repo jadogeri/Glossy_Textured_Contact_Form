@@ -1,6 +1,7 @@
 {
   "name": "glossy_textured_contact_form",
   "version": "0.1.0",
+  "author": "Joseph Adogeri",
   "private": true,
   "homepage": "https://jadogeri.github.io/Glossy_Textured_Contact_Form/",
   "dependencies": {
