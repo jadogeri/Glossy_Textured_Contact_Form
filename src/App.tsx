@@ -1,8 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { useForm } from "react-hook-form";
+
+const App = () => {
+  type Inputs={
+    fullname : string;
+    email : string;
+    username : string;
+  }
+  const { register, handleSubmit } = useForm<Inputs>();
+
+  const onSubmit = (data : any) =>{
+    console.log(data)
+  }
+
   return (
     <>
       <h1>Glossy Textured Contact Form</h1>
@@ -10,14 +20,14 @@ function App() {
 		<h2>Contact Form</h2>
 		<div className="avtar"><img src="assets/images/color.jpg" /></div>			
 		<div className="form-info">
-				<form>
-					<input type="text" className="text" value="Your full name" onFocus={()=>{}} //onblur="if (this.value == '') {this.value = 'Your full name';}" 
+				<form onSubmit={handleSubmit(onSubmit)}>
+					<input type="text" className="text" value="Your full name" onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'Your full name';}" 
           />
-					<input type="text" className="text" value="Email adress" onFocus={()=>{}} //onblur="if (this.value == '') {this.value = 'Email adress';}" 
+					<input type="text" className="text" value="Email adress" onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'Email adress';}" 
           />
-					<input type="text" className="text" value="User name" onFocus={()=>{}} //onblur="if (this.value == '') {this.value = 'User name';}" 
+					<input type="text" className="text" value="User name" onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'User name';}" 
           />
-					<textarea  onFocus={()=>{}} //onblur="if (this.value == '') {this.value = 'Message...';}" 
+					<textarea  onFocus={()=>{}} onBlur={()=>{}}//onblur="if (this.value == '') {this.value = 'Message...';}" 
           required={false}>Message...</textarea>
 					<input type="submit" value="SUBMIT"/>
 				</form>
@@ -37,22 +47,7 @@ function App() {
 </div>
       
     </>
-    // <div classNameName="App">
-    //   <header classNameName="App-header">
-    //     <img src={logo} classNameName="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.tsx</code> and save to reload.
-    //     </p>
-    //     <a
-    //       classNameName="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+
   );
 }
 
