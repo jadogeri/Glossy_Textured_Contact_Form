@@ -45,16 +45,16 @@ Application is deployed in Github (Github Pages)
             <li><a href="#11-purpose">1.1 Purpose</a> </li>
         </ul>
     </li>
-    <li><a href="#5-installation">2. Installation</a> </li>
-    <li><a href="#6-usage">3. Usage</a>
+    <li><a href="#2-installation">2. Installation</a> </li>
+    <li><a href="#3-usage">3. Usage</a>
         <ul>
-            <li><a href="#61-run-application">3.1 Run Application</a> </li>
+            <li><a href="#31-run-application">3.1 Run Application</a> </li>
             <ul>
-              <li><a href="#611-run-locally">3.1.1 Run Locally</a> </li>
+              <li><a href="#311-run-locally">3.1.1 Run Locally</a> </li>
             </ul>
         </ul>
     </li>
-    <li><a href="#10-references">4. References</a> </li>
+    <li><a href="#4-references">4. References</a> </li>
 </ul>
 
 
