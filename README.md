@@ -1,6 +1,7 @@
 ## **Glossy Textured Contact Form**
 
 **Version:** 1.1
+
 **Date:** August 21, 2025
 
 ---
@@ -23,7 +24,7 @@ Design and template by [W3Layouts](https://w3layouts.com/)
 
 ## Deployment
 
-Application is deployed in Github (Github Pages)
+Application is deployed to Github (Github Pages)
 
  [https://jadogeri.github.io/Glossy_Textured_Contact_Form/](https://jadogeri.github.io/Glossy_Textured_Contact_Form/)
 
@@ -62,7 +63,7 @@ Application is deployed in Github (Github Pages)
 
 ### **1.1 Purpose**
 
-This document outlines the components, and design considerations for utilizing react hook form for form input validation.
+This document outlines the components, and design considerations for utilizing react hook form for input validation.
 
 ## **2. Installation**
 
@@ -78,13 +79,13 @@ This document outlines the components, and design considerations for utilizing r
 
 1 Open command prompt or terminal.
 
-2 Type command git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git then press enter.
+2 Type command `git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git` then press enter.
 
 ```bash
   git clone https://github.com/jadogeri/Glossy_Textured_Contact_Form.git
 ```
 
-3 Enter command cd Glossy_Textured_Contact_Form then press enter.
+3 Enter command `cd Glossy_Textured_Contact_Form` then press enter.
 
 ```bash
   cd Glossy_Textured_Contact_Form
@@ -92,13 +93,13 @@ This document outlines the components, and design considerations for utilizing r
 
 #### **3.1.1 Run Locally**
 
-1 Type npm install --force to install dependencies.
+1 Type `npm install --force` to install dependencies.
 
 ```bash
   npm install --force
 ```
 
-2 Type npm start to run application
+2 Type `npm start` to run application
 
 ```bash
   npm start
