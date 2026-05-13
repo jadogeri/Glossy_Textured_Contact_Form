@@ -1,0 +1,15 @@
+# Hide all JavaScript files
+*.js linguist-detectable=false
+
+# Hide all HTML files
+*.html linguist-detectable=false
+
+# Hide all CSS files
+*.css linguist-detectable=false
+
+# Hide Font Awesome and other asset files
+*.svg linguist-detectable=false
+*.eot linguist-detectable=false
+*.ttf linguist-detectable=false
+*.woff linguist-detectable=false
+*.woff2 linguist-detectable=false
