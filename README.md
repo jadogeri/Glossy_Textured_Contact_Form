@@ -8,7 +8,7 @@
 
 ## Description
 
-This is a frontend Application temnplate (typescript) utilizing library react hook form for validating inputs.
+This is a frontend Application template (typescript) using library react hook form for validating inputs.
 
 ## Authors
 
